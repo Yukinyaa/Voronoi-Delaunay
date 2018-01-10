@@ -6,6 +6,6 @@ In this implementation, Voronoi diagram is obtained from generating its dual, De
 
 For Deriving Voronoi diagram, I used a data structure of storing each point with a triangle list containing all the triangles incident on it. Thus, by traversing the triangle lists of the two end points, I can directly find the two adjacent triangles of a certain Delaunay edge and connect the centers of their circumcircles. As Delaunay triangulation is a planar graph, the procedure of finding adjacent triangles takes constant time and the total time of generating Voronoi diagram is O(n).
 
-In addition, I also wrote another version that shows the Bowyer-Watson algorithm step by step in [the animation branch](https://github.com/IsaacGuan/Voronoi-Delaunay/tree/animation) of this repository.
+In addition, I wrote another version that shows the Bowyer-Watson algorithm step by step in [the animation branch](https://github.com/IsaacGuan/Voronoi-Delaunay/tree/animation) of this repository. You can also go to [my blog](https://isaacguan.github.io/2017/12/22/Implementation-of-Voronoi-Diagram-and-Delaunay-Triangulation/) for more specifics of the implementation.
 
-![voronoi-delaunay](/voronoi-delaunay.bmp)
+![voronoi-delaunay](voronoi-delaunay.bmp)
